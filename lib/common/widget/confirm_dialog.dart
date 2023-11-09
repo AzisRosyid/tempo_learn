@@ -67,8 +67,7 @@ class _ConfirmDialogState extends State<ConfirmDialog> {
                                 style: AppFontStyle.dialogTitleText),
                             const SizedBox(height: 14.0),
                             Container(
-                              margin:
-                                  const EdgeInsets.symmetric(horizontal: 8),
+                              margin: const EdgeInsets.symmetric(horizontal: 8),
                               child: Text(
                                 widget.message,
                                 style: AppFontStyle.dialogText,
@@ -129,8 +128,8 @@ class _ConfirmDialogState extends State<ConfirmDialog> {
                                 decoration: BoxDecoration(
                                   gradient: const LinearGradient(
                                     colors: [
-                                      Color(0xFFD20328),
-                                      Color(0xFFA20925)
+                                      Color(0xFFf44369),
+                                      Color(0xFFf40752)
                                     ],
                                     begin: Alignment.topCenter,
                                     end: Alignment.bottomCenter,

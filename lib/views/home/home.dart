@@ -84,11 +84,17 @@ class Home extends StatelessWidget {
                   padding: EdgeInsets.zero,
                   children: [
                     Container(
+                      margin: const EdgeInsets.only(
+                        left: 28,
+                        top: 16,
+                        bottom: 2,
+                      ),
+                      child: Text("Opsi Materi: ", style: AppFontStyle.homeListHeaderText,)),
+                    Container(
                       padding: const EdgeInsets.symmetric(
-                        vertical: 20,
                         horizontal: 21,
                       ),
-                      height: MediaQuery.of(context).size.height * 0.63,
+                      height: MediaQuery.of(context).size.height * 0.50,
                       child: GridView.count(
                         padding: const EdgeInsets.all(8),
                         crossAxisCount: 1,
@@ -103,15 +109,7 @@ class Home extends StatelessWidget {
                             colors: st.colors,
                             section: st,
                           ),
-                          // HomeMenuItem(
-                          //   icon: "law.png",
-                          //   name: "",
-                          //   colors: [
-                          //     Color(0xFFEFCF42),
-                          //     Color(0xFFE59700),
-                          //   ],
-                          // ),
-                          SizedBox(),
+                          const SizedBox(),
                         ],
                       ),
                     ),

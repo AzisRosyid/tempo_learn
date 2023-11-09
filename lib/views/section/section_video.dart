@@ -58,7 +58,7 @@ class _SectionVideoState extends State<SectionVideo> {
               clipper: BackClipper(),
               child: Container(
                   color: const Color(0xFF80D6DA),
-                  height: MediaQuery.of(context).size.height * .7,
+                  height: MediaQuery.of(context).size.height * .65,
                   child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -181,11 +181,14 @@ class _SectionVideoState extends State<SectionVideo> {
           ConfirmDialog(
               title: "Konfirmasi Quiz",
               message:
-                  "Kerjakan Quiz yang berjumlah 10 soal. Setiap soal memiliki batas waktu 30 detik.",
+                  "Kerjakan Quiz yang berjumlah ${widget.section.quiz.questions.length} soal. Setiap soal memiliki batas waktu 3 menit.",
               colors: widget.section.colors,
               visible: isQuizDialogVisible,
               confirmText: "Kerjakan",
               onConfirm: () {
+                setState(() {
+                  isQuizDialogVisible = false;
+                });
                 Navigator.of(context).push(TransitionFade(
                     child: SectionQuiz(
                   section: widget.section,

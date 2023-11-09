@@ -5,7 +5,7 @@ class TopBar extends StatefulWidget {
   final String title;
   final VoidCallback settingAction;
   final VoidCallback? popAction;
-  const TopBar({super.key, this.title = "Helo", required this.settingAction, this.popAction});
+  const TopBar({super.key, this.title = "", required this.settingAction, this.popAction});
 
   @override
   State<TopBar> createState() => _TopBarState();
@@ -36,7 +36,7 @@ class _TopBarState extends State<TopBar> {
             ),
           ),
           Container(
-            margin: const EdgeInsets.symmetric(horizontal: 4),
+            margin: const EdgeInsets.symmetric(horizontal: 8),
             width: MediaQuery.of(context).size.width * 0.7,
             child: Text(
               widget.title.length > 24 ? '${widget.title.substring(0, 24)}...' : widget.title,

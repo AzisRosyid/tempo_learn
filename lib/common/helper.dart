@@ -18,7 +18,7 @@ List<Section> sections = [
       ],
       quiz: getQuiz[0]),
   Section(
-    id: 2,
+      id: 2,
     title: "Bab 2: Penelitian Prinsip Kontiguitas Temporal",
     video: "video1.mp4",
     summary: "Helo",

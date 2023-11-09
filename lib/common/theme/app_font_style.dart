@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppFontStyle {
-  static TextStyle boldText = const TextStyle(fontSize: 16, fontFamily: "Nunito", height: 1);
+  static TextStyle boldText = const TextStyle(fontSize: 14, fontFamily: "Nunito", fontWeight: FontWeight.bold,);
   static TextStyle normalText = const TextStyle(fontSize: 14, fontFamily: "Nunito", height: 1);
   static TextStyle homeHeaderText = const TextStyle(
     fontSize: 40,
@@ -11,6 +11,12 @@ class AppFontStyle {
 
   static TextStyle homeSubHeaderText = const TextStyle(
       fontSize: 14,
+      fontFamily: 'Nunito',
+      fontWeight: FontWeight.bold,
+      color: Colors.black);
+
+    static TextStyle homeListHeaderText = const TextStyle(
+      fontSize: 22,
       fontFamily: 'Nunito',
       fontWeight: FontWeight.bold,
       color: Colors.black);
@@ -54,6 +60,13 @@ class AppFontStyle {
       fontSize: 18,
       fontFamily: 'Nunito',
       fontWeight: FontWeight.bold,
+      color: Colors.white);
+
+                    static TextStyle quizButtonText = const TextStyle(
+      fontSize: 16,
+      fontFamily: 'Nunito',
+      fontWeight: FontWeight.bold,
+      height: 1.1,
       color: Colors.white);
 
   static TextStyle authInputText =
